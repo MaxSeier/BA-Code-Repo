@@ -11,11 +11,11 @@
 
 ## Hauptschleife: Fuer jede Stadt in ExcelData
 - LOOP ueber ExcelData:
-    - Gehe zu Google-Suche mit Query = "Wetter + <Stadt>"
+    - Gehe zu Google-Suche mit Query = "Wetter + Stadt"
     - Extrahiere Wetterdaten (Temperatur, Hoechst-/Tiefstwerte, Wetterlage, etc.)
     - Schreibe Ergebnisse in [Wetter-Ergebnisse] (Spalten B-H)
 
-    ## Regelbasierte Bewertung der Temperatur
+    ### Regelbasierte Bewertung der Temperatur
     - SWITCH Temperatur:
         - <=  -39   -> "sehr kalt"
         - <   -26   -> "kalt"

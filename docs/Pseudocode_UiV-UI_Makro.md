@@ -1,12 +1,12 @@
 ## Initialisierung
 - Setze Variablen:
-  * Browser-Pfad (Firefox)
-  * Staedte-Datei (staedte.xlsx)
-  * Ergebnis-Template (wetter_ergebnisse_man.xltx)
-  * Google-Such-URL
-  * Speicherpfad & Dateiname
-  * Startwerte fuer Schleifen (i = 1, row_counter = 3)
-  * Bildschirmkoordinaten fuer Screenshots
+  - Browser-Pfad (Firefox)
+  - Staedte-Datei (staedte.xlsx)
+  - Ergebnis-Template (wetter_ergebnisse_man.xltx)
+  - Google-Such-URL
+  - Speicherpfad & Dateiname
+  - Startwerte fuer Schleifen (i = 1, row_counter = 3)
+  - Bildschirmkoordinaten fuer Screenshots
 
 ## Vorbereitung
 - Oeffne Firefox und ordne Fenster links an
