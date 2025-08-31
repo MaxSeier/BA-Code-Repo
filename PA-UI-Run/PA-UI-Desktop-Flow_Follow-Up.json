@@ -1,9 +1,10 @@
+
 FUNCTION 'Follow-Up' GLOBAL
     # Alle Anwendungen schließen
     WebAutomation.CloseWebBrowser BrowserInstance: Browser
     DateTime.GetCurrentDateTime.Local DateTimeFormat: DateTime.DateTimeFormat.DateAndTime CurrentDateTime=> CurrentDateTime
     Text.ConvertDateTimeToText.FromCustomDateTime DateTime: CurrentDateTime CustomFormat: $'''yyyy-MM-dd-hh-mm''' Result=> FormattedDateTime
-    MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: ExcelInstance2 TextToSend: $'''{Alt}{D}{H}{O}''' DelayBetweenKeystrokes: 300 SendTextAsHardwareKeys: False
-    MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: ExcelInstance2 TextToSend: $'''%FileName%%FormattedDateTime%{F4}{Control}({A})%FileSavePath%{Enter}{Tab}{Alt}({S})''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
-    MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle WindowInstance: ExcelInstance2 TextToSend: $'''{Alt}({F4})''' DelayBetweenKeystrokes: 300 SendTextAsHardwareKeys: False
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Alt}{D}{H}{O}''' DelayBetweenKeystrokes: 300 SendTextAsHardwareKeys: False
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%FileName%%FormattedDateTime%{F4}{Control}({A})%FileSavePath%{Enter}{Tab}{Alt}({S})''' DelayBetweenKeystrokes: 10 SendTextAsHardwareKeys: False
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Alt}({F4})''' DelayBetweenKeystrokes: 300 SendTextAsHardwareKeys: False
 END FUNCTION

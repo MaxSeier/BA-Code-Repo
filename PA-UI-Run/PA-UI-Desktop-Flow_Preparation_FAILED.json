@@ -1,4 +1,3 @@
-
 FUNCTION Preparation GLOBAL
     # Öffne Browser
     WebAutomation.LaunchFirefox.LaunchFirefox Url: $'''https://www.google.com/''' WindowState: WebAutomation.BrowserWindowState.Normal ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout: 60 PiPUserDataFolderMode: WebAutomation.PiPUserDataFolderModeEnum.AutomaticProfile TargetDesktop: $'''{\"DisplayName\":\"Lokaler Computer\",\"Route\":{\"ServerType\":\"Local\",\"ServerAddress\":\"\"},\"DesktopType\":\"local\"}''' BrowserInstance=> Browser
